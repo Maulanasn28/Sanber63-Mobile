@@ -1,0 +1,20 @@
+bookPageDirec_bookingPage : com.example.myapplication:id/book
+verifyBookFlightPage_bookingPage : com.example.myapplication:id/book_flight
+roundTripOps_bookingPage : //android.support.v7.app.ActionBar.Tab[@content-desc="Round Trip"]
+oneWayOps_bookingPage : //android.support.v7.app.ActionBar.Tab[@content-desc="One Way"]
+fromCity_bookinPage : com.example.myapplication:id/spinnerFrom
+newyorkCity_bookinPage : //android.widget.ListView/android.widget.TextView[1]
+toCity_bookinPage : com.example.myapplication:id/spinnerTo
+londonCity_bookinPage : //android.widget.ListView/android.widget.TextView[1]
+class_bookingPage : com.example.myapplication:id/spinnerClass
+economyClass_bookinPage : //android.widget.ListView/android.widget.TextView[1]
+startDate_bookingPage : com.example.myapplication:id/textStartDate
+verifyChooseDate_bookingPage : android:id/date_picker_header_date
+chooseDate_bookingPage : //android.view.View[@content-desc="02 August 2019"]
+btnOkChooseDate_bookinPage : android:id/button1
+btnCancelChooseDate_bookingPage : android:id/button2
+endDate_bookingPage : com.example.myapplication:id/textEndDate
+justFlightOps_bookinPage : com.example.myapplication:id/radioButtonFlight
+fligtAndHotelOps_bookinPage : com.example.myapplication:id/radioButtonFlightHotel
+oneDayOps_bookinPage : com.example.myapplication:id/checkBoxDay
+btnBooking_bookinPage : com.example.myapplication:id/book_flight
