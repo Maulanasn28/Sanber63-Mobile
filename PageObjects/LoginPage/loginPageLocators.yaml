@@ -2,3 +2,4 @@ fieldEmail_loginPage: com.example.myapplication:id/username
 fieldPassword_loginPage: com.example.myapplication:id/password
 btnSignIn_loginPage : com.example.myapplication:id/signIn
 userActiveName_loginPage : com.example.myapplication:id/textView
+verify_invalid: //android.widget.Toast[@text="Invalid username/password"]

@@ -33,6 +33,10 @@ Verify User active name
 Verify User Stay in Login Screen 
     Wait Until Element Is Visible      ${btnSignIn_loginPage}
 
+# Add keyword (Alzira)
+Verify User Failed Login
+    Page Should Contain Element    ${verify_invalid}
+
 
 # SCENARIO
 Login With Valid Credentials

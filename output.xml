@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.10.7 on win32)" generated="2025-01-29T13:08:33.022705" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="C:\Users\Dell\Documents\sanbercode\Sanber63-Mobile-Kelompok12\Suites\login.robot">
+<test id="s1-t1" name="User should be able to login with invalid email" line="26">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:08:33.394371" elapsed="15.834510"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:33.393410" elapsed="15.836472"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:08:33.393410" elapsed="15.836472"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:50.233802" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:49.237719" elapsed="0.996083"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:49.235880" elapsed="0.998281"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:50.339059" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:50.235276" elapsed="0.103783"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:50.344187" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:08:50.534582" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:08:50.339059" elapsed="0.195523"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:50.234686" elapsed="0.299896"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:52.945504" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:50.536131" elapsed="2.409373"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:53.074309" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:52.945504" elapsed="0.128805"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:53.184105" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:53.074309" elapsed="0.110345"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:50.536131" elapsed="2.648523"/>
+</kw>
+<kw name="Input User Email On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:53.192524" level="INFO">Typing text 'support@ngendigital.co.id' into text field 'com.example.myapplication:id/username'</msg>
+<msg time="2025-01-29T13:08:53.342920" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:08:53.186897" elapsed="0.156779"/>
+</kw>
+<arg>${INVALID_EMAIL}</arg>
+<status status="PASS" start="2025-01-29T13:08:53.185898" elapsed="0.157778"/>
+</kw>
+<kw name="Input User Password On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:53.352219" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
+<msg time="2025-01-29T13:08:53.947241" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:08:53.346258" elapsed="0.600983"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-01-29T13:08:53.344670" elapsed="0.602571"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:53.955992" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:08:54.579294" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:08:53.949246" elapsed="0.630048"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:53.948330" elapsed="0.631709"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:08:55.154621" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:08:54.584040" elapsed="0.570581"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:54.583040" elapsed="0.571581"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:08:33.391406" elapsed="21.764266"/>
+</test>
+<test id="s1-t2" name="User should be able to login with invalid password" line="36">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:08:55.165208" elapsed="17.041409"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:08:55.164205" elapsed="17.043423"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:08:55.160249" elapsed="17.047379"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:13.220209" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:12.209638" elapsed="1.010571"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:12.208634" elapsed="1.011575"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:13.357894" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:13.222113" elapsed="0.135781"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:13.361849" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:09:13.580588" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:13.359001" elapsed="0.221587"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:13.221491" elapsed="0.359097"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:15.966495" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:13.583541" elapsed="2.382954"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:16.074111" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:15.966495" elapsed="0.107616"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:16.182115" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:16.074111" elapsed="0.108004"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:13.582681" elapsed="2.600433"/>
+</kw>
+<kw name="Input User Email On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:16.191116" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg time="2025-01-29T13:09:16.329232" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:16.185238" elapsed="0.144116"/>
+</kw>
+<arg>${VALID_EMAIL}</arg>
+<status status="PASS" start="2025-01-29T13:09:16.184014" elapsed="0.145340"/>
+</kw>
+<kw name="Input User Password On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:16.335232" level="INFO">Typing text 'abc12345' into text field 'com.example.myapplication:id/password'</msg>
+<msg time="2025-01-29T13:09:16.894255" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:16.331414" elapsed="0.562841"/>
+</kw>
+<arg>${INVALID_PASSWORD}</arg>
+<status status="PASS" start="2025-01-29T13:09:16.330233" elapsed="0.564022"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:16.902581" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:09:17.501819" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:16.896040" elapsed="0.605779"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:16.895301" elapsed="0.606518"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:18.115067" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:17.503987" elapsed="0.611080"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:17.502819" elapsed="0.613250"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:08:55.157200" elapsed="22.958869"/>
+</test>
+<test id="s1-t3" name="User should be able to login with invalid credentials" line="46">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:09:18.124068" elapsed="18.589925"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:18.122070" elapsed="18.591923"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:09:18.121071" elapsed="18.593920"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:37.799204" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:36.723153" elapsed="1.076803"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:36.720996" elapsed="1.078960"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:37.931009" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:37.801952" elapsed="0.130055"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:37.935324" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:09:38.160678" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:37.932007" elapsed="0.229184"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:37.800951" elapsed="0.360240"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:40.605959" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:38.164190" elapsed="2.441769"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:40.702115" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:40.606938" elapsed="0.095177"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:40.815139" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:40.702115" elapsed="0.113338"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:38.163514" elapsed="2.652069"/>
+</kw>
+<kw name="Input User Email On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:40.821813" level="INFO">Typing text 'support@ngendigital.co.id' into text field 'com.example.myapplication:id/username'</msg>
+<msg time="2025-01-29T13:09:40.973120" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:40.817106" elapsed="0.156917"/>
+</kw>
+<arg>${INVALID_EMAIL}</arg>
+<status status="PASS" start="2025-01-29T13:09:40.816323" elapsed="0.157700"/>
+</kw>
+<kw name="Input User Password On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:40.982075" level="INFO">Typing text 'abc12345' into text field 'com.example.myapplication:id/password'</msg>
+<msg time="2025-01-29T13:09:41.531242" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:40.976065" elapsed="0.555177"/>
+</kw>
+<arg>${INVALID_PASSWORD}</arg>
+<status status="PASS" start="2025-01-29T13:09:40.975022" elapsed="0.556220"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:41.539173" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:09:42.140847" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:09:41.533174" elapsed="0.607673"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:41.533174" elapsed="0.607673"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:09:42.702457" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:09:42.142843" elapsed="0.559826"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:42.141906" elapsed="0.560763"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:09:18.119251" elapsed="24.584206"/>
+</test>
+<test id="s1-t4" name="User should be able to login with empty email" line="56">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:09:42.709729" elapsed="19.053154"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:09:42.707995" elapsed="19.054888"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:09:42.706711" elapsed="19.056172"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:03.359085" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:01.776043" elapsed="1.583042"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:01.775003" elapsed="1.585225"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:03.480135" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:03.361087" elapsed="0.119048"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:03.486878" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:10:03.728663" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:03.481074" elapsed="0.247589"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:03.360228" elapsed="0.368435"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:06.195193" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:03.731668" elapsed="2.463525"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:06.299879" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:06.196146" elapsed="0.103733"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:06.418488" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:06.300256" elapsed="0.118232"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:03.730888" elapsed="2.688447"/>
+</kw>
+<kw name="Input User Password On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:06.425334" level="INFO">Typing text 'abc123' into text field 'com.example.myapplication:id/password'</msg>
+<msg time="2025-01-29T13:10:06.553954" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:06.420354" elapsed="0.133600"/>
+</kw>
+<arg>${VALID_PASSWORD}</arg>
+<status status="PASS" start="2025-01-29T13:10:06.419984" elapsed="0.133970"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:06.561953" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:10:07.169981" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:06.555953" elapsed="0.615095"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:06.554948" elapsed="0.616100"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:07.772445" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:07.172982" elapsed="0.599463"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:07.172076" elapsed="0.601296"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:09:42.705460" elapsed="25.068961"/>
+</test>
+<test id="s1-t5" name="User should be able to login with empty password" line="65">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:10:07.784673" elapsed="18.943916"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:07.784053" elapsed="18.945373"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:10:07.782055" elapsed="18.947371"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:27.674229" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:26.747952" elapsed="0.926277"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:26.746955" elapsed="0.927274"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:27.808941" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:27.676329" elapsed="0.132612"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:27.814402" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:10:28.059156" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:27.809942" elapsed="0.249474"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:27.675612" elapsed="0.383804"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:30.613148" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:28.061162" elapsed="2.551986"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:30.692201" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:30.614148" elapsed="0.078793"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:30.778379" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:30.693202" elapsed="0.086174"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:28.060157" elapsed="2.719219"/>
+</kw>
+<kw name="Input User Email On Login Page" owner="loginPage">
+<kw name="Input Text" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:30.785890" level="INFO">Typing text 'support@ngendigital.com' into text field 'com.example.myapplication:id/username'</msg>
+<msg time="2025-01-29T13:10:30.955381" level="INFO">criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<arg>${email}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:30.781374" elapsed="0.174007"/>
+</kw>
+<arg>${VALID_EMAIL}</arg>
+<status status="PASS" start="2025-01-29T13:10:30.780374" elapsed="0.176010"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:30.964381" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:10:31.566978" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:30.958390" elapsed="0.608588"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:30.956384" elapsed="0.611136"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:32.194801" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:31.569594" elapsed="0.625207"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:31.568534" elapsed="0.626267"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:10:07.780900" elapsed="24.416434"/>
+</test>
+<test id="s1-t6" name="User should be able to login with empty fields" line="74">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" start="2025-01-29T13:10:32.206987" elapsed="18.611409"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:32.206061" elapsed="18.613276"/>
+</kw>
+<arg>Open Flight Application</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-01-29T13:10:32.205461" elapsed="18.613876"/>
+</kw>
+<kw name="Verify Home Page Appears" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:51.795021" level="INFO">criteria is com.example.myapplication:id/imageView4</msg>
+<arg>${logo_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:50.823334" elapsed="0.971908"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:50.822606" elapsed="0.972758"/>
+</kw>
+<kw name="Click Sign In Button On Home Page" owner="homePage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:51.959118" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:51.796884" elapsed="0.162234"/>
+</kw>
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:51.962115" level="INFO">Clicking element 'com.example.myapplication:id/login'.</msg>
+<msg time="2025-01-29T13:10:52.194179" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<arg>${btnSignIn_homePage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:51.959118" elapsed="0.236059"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:51.795944" elapsed="0.399233"/>
+</kw>
+<kw name="Verify Login Appears" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:54.844983" level="INFO">criteria is com.example.myapplication:id/username
+criteria is com.example.myapplication:id/username</msg>
+<arg>${fieldEmail_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:52.196705" elapsed="2.649321"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:54.941714" level="INFO">criteria is com.example.myapplication:id/password</msg>
+<arg>${fieldPassword_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:54.846345" elapsed="0.095369"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:55.042671" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:54.941714" elapsed="0.100957"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:52.196180" elapsed="2.846491"/>
+</kw>
+<kw name="Click Sign In Button On Login Page" owner="loginPage">
+<kw name="Click Element" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:55.049631" level="INFO">Clicking element 'com.example.myapplication:id/signIn'.</msg>
+<msg time="2025-01-29T13:10:55.218115" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="PASS" start="2025-01-29T13:10:55.044670" elapsed="0.173445"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:55.044138" elapsed="0.174980"/>
+</kw>
+<kw name="Verify User Stay in Login Screen" owner="loginPage">
+<kw name="Wait Until Element Is Visible" owner="AppiumLibrary">
+<msg time="2025-01-29T13:10:55.851316" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<arg>${btnSignIn_loginPage}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="PASS" start="2025-01-29T13:10:55.221165" elapsed="0.631155"/>
+</kw>
+<status status="PASS" start="2025-01-29T13:10:55.220116" elapsed="0.632204"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" start="2025-01-29T13:10:32.204138" elapsed="23.650178"/>
+</test>
+<status status="PASS" start="2025-01-29T13:08:33.024837" elapsed="142.837508"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="6" fail="0" skip="0">Negative</stat>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="6" fail="0" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
