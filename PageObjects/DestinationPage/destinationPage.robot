@@ -1,6 +1,6 @@
 *** Settings ***
 Resource            ../LoginPage/loginPage.robot
-Variables           destinationPageLocators.yaml
+Variables           destinationPageLocator.yaml
 
 
 *** Keywords ***
