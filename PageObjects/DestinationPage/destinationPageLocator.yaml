@@ -1,0 +1,29 @@
+btnBook_destinationPage : com.example.myapplication:id/book
+verifyBookFlightPage_destinationPage : com.example.myapplication:id/book_flight
+fromCity_destinationPage : com.example.myapplication:id/spinnerFrom
+newyorkCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="New York"]
+chicagoCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Chicago"]
+torontoCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Toronto"]
+verifyChooseCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Chicago"]
+toCity_destinationPage : com.example.myapplication:id/spinnerTo
+londonCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="London"]
+parisCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Paris"]
+ottawaCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Ottawa"]
+verifyChooseCity_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Paris"]
+class_destinationPage : com.example.myapplication:id/spinnerClass
+economy_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Economy"]
+first_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Paris"]
+bussines_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Business"]
+verifyChooseClass_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="Business"]
+startDate_destinationPage : com.example.myapplication:id/textStartDate
+verifyChooseDate_destinationPage : android:id/date_picker_header_date
+chooseDate_destinationPage : //android.view.View[@content-desc="02 August 2023"]
+btnOkChooseDate_destinatioonPage : android:id/button1
+verifyChooseYear_destinationPage : android:id/date_picker_header_year
+chooseYear_destinationPage : //android.widget.TextView[@resource-id="android:id/text1" and @text="2023"]
+btnOkChooseYear_destinationPage : android:id/button1
+endDate_destinationPage : com.example.myapplication:id/textEndDate
+justFlightOps_destinationPage : com.example.myapplication:id/radioButtonFlight
+fligtAndHotelOps_destinationPage : com.example.myapplication:id/radioButtonFlightHotel
+oneDayOps_destinationPage : com.example.myapplication:id/checkBoxDay
+btnBooking_destinationPage : com.example.myapplication:id/book_flight

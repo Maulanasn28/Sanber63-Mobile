@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-01-30T14:26:37.368203" rpa="false" schemaversion="5">
+<suite id="s1" name="Booking" source="F:\boothcampSQA\mobile2\Sanber63-Mobile-Kelompok12\Suites\booking.robot">
+<test id="s1-t1" name="The user books a ticket by selecting the price $1860" line="15">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:39.379948" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:39.379104" elapsed="0.505933">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:39.888565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:39.889799" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:38.134059" elapsed="1.760405">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:38.133584" elapsed="1.761201">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:38.132359" elapsed="1.762563">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:39.896761" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:39.896483" elapsed="0.002748">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:39.904488" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:39.905660" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:39.896172" elapsed="0.012650">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:39.895665" elapsed="0.013557">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:38.130510" elapsed="1.779055">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t2" name="The user books a ticket by selecting the price $2055" line="33">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:40.348774" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.348299" elapsed="0.009573">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:40.363750" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.365312" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:39.918560" elapsed="0.452583">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:39.917847" elapsed="0.454026">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:39.917296" elapsed="0.454756">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:40.374403" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.373956" elapsed="0.005102">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:40.385948" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.387423" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.373438" elapsed="0.020592">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.372772" elapsed="0.021623">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:39.916086" elapsed="0.478681">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t3" name="The user books a ticket by selecting the price $1980" line="51">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:40.774636" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.774016" elapsed="0.007428">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:40.785781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.787107" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.400961" elapsed="0.389127">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.400611" elapsed="0.389972">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.400288" elapsed="0.390506">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:40.793023" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.792720" elapsed="0.003620">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:40.804018" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.805469" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.792308" elapsed="0.019653">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.791652" elapsed="0.020713">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.399305" elapsed="0.413549">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t4" name="The user books a ticket by selecting the price $1755" line="69">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:41.179774" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.179210" elapsed="0.007564">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:41.196957" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.199889" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.823292" elapsed="0.382393">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.819535" elapsed="0.386586">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:40.818938" elapsed="0.387436">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:41.208989" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.208598" elapsed="0.004269">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:41.223037" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.243923" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.208153" elapsed="0.039964">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.207429" elapsed="0.041064">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:40.817780" elapsed="0.433941">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t5" name="The user books a ticket by selecting the price $1990" line="87">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:41.786328" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.785743" elapsed="0.008405">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:41.799918" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.801193" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.298079" elapsed="0.507235">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.297704" elapsed="0.508128">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.297366" elapsed="0.508628">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:41.808604" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.808179" elapsed="0.004089">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:41.815919" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.817091" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.807694" elapsed="0.012845">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.806955" elapsed="0.014112">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.296021" elapsed="0.525523">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t6" name="The user books a ticket by selecting the price $2084" line="105">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:42.189835" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.189329" elapsed="0.006760">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:42.202745" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.204372" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.834655" elapsed="0.375219">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.832886" elapsed="0.377441">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:41.831588" elapsed="0.378948">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:42.213486" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.212969" elapsed="0.004606">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:42.228228" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.230025" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.212396" elapsed="0.020077">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.211613" elapsed="0.021229">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:41.828751" elapsed="0.404474">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t7" name="The user books a ticket by selecting the price $1798" line="123">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:42.693749" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.693200" elapsed="0.006561">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:42.704023" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.705424" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.249752" elapsed="0.460566">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.249071" elapsed="0.461690">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.248522" elapsed="0.462461">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:42.713930" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.713264" elapsed="0.005209">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:42.727541" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.731269" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.712550" elapsed="0.021729">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.711710" elapsed="0.023015">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.246599" elapsed="0.488537">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t8" name="The user books a ticket by selecting the price $2015" line="141">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:43.111785" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.111432" elapsed="0.007886">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:43.124269" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.125857" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.745948" elapsed="0.384644">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.745139" elapsed="0.386105">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:42.744479" elapsed="0.387005">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:43.134641" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.134042" elapsed="0.005374">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:43.149274" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.150588" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.133474" elapsed="0.019312">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:43.132490" elapsed="0.020671">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:42.742618" elapsed="0.411339">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<test id="s1-t9" name="The user books a ticket by selecting the price $2250" line="159">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Open Flight Application" owner="base">
+<kw name="Open Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:43.547347" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.546799" elapsed="0.008050">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:43.560717" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.562020" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</msg>
+<arg>remote_url=${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://appium.io/docs/en/2.1/cli/args/
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.162445" elapsed="0.402659">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:43.162020" elapsed="0.403412">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<arg>Open Flight Application</arg>
+<arg>AND</arg>
+<arg>Login With Valid Credentials</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.161649" elapsed="0.403915">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)</status>
+</kw>
+<kw name="Close Flight Application" owner="base" type="TEARDOWN">
+<kw name="Close Application" owner="AppiumLibrary">
+<kw name="Capture Page Screenshot" owner="AppiumLibrary">
+<msg time="2025-01-30T14:26:43.567393" level="FAIL">No application is open</msg>
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.567121" elapsed="0.003158">No application is open</status>
+</kw>
+<msg time="2025-01-30T14:26:43.575988" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.577274" level="FAIL">No application is open</msg>
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="FAIL" start="2025-01-30T14:26:43.566786" elapsed="0.013236">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:43.566301" elapsed="0.014177">No application is open</status>
+</kw>
+<status status="FAIL" start="2025-01-30T14:26:43.160651" elapsed="0.420288">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Unable to find an active device or emulator with OS 9.0. The following are available: emulator-5554 (12)
+    at getResponseForW3CError (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Program Files\Appium Server GUI\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:380:37)
+
+Also teardown failed:
+No application is open</status>
+</test>
+<doc>Execute scenario user Reservation Flight Ticket</doc>
+<status status="FAIL" start="2025-01-30T14:26:37.371691" elapsed="6.217556"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="9" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Booking" id="s1" pass="0" fail="9" skip="0">Booking</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-01-30T14:26:39.888565" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:39.904488" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.363750" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.385948" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.785781" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:40.804018" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.196957" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.223037" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.799918" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:41.815919" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.202745" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.228228" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.704023" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:42.727541" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.124269" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.149274" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.560717" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg time="2025-01-30T14:26:43.575988" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+</errors>
+</robot>
